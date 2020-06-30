@@ -7,3 +7,9 @@
 	padding:60px 0px;
 	border-bottom: 1px solid rgba(170, 155, 170, 0.333);
 }
+.footer{
+	align-self: center;
+}
+.footer p a{
+	margin:5px 15px;
+}
