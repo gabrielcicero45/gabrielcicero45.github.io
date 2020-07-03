@@ -3,12 +3,23 @@
 	color: white;
 	padding-top: 50px;
 }
+.login{
+	align-content: center;
+	margin-top: 100px;
+	padding: 15px 0px;
+}
+#header1{
+	position: absolute;
+	align-content: center;
+	padding:0% 36%;
+}
 .conteudo{
 	padding:60px 0px;
 	border-bottom: 1px solid rgba(170, 155, 170, 0.333);
 }
 .footer{
 	align-self: center;
+	color:white;
 }
 .footer p a{
 	margin:5px 15px;
