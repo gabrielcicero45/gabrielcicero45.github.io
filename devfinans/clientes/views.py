@@ -1,51 +1,52 @@
 from django.shortcuts import render,redirect
-from .form import ClienteForm,LoginForm,Newsletter
+from .forms import Newsletter,ClienteForm
+''',LoginForm,'''
 from django.core.mail import send_mail
 from django.contrib.auth import authenticate, login
-from .form import Newsletter
+from django.views import generic
+from django.core.mail import send_mail, BadHeaderError
+from django.http import HttpResponse
 def inicio(request):
-    
-    return render(request,'index.html')
+    form = Newsletter()
+    if request.method == 'POST':
+        form = Newsletter(request.POST)
+        if form.is_valid():
+            assunto = 'Novo Lead !!'
+            menssagem = form.cleaned_data["email"]
+            remetente = form.cleaned_data["email"]
+            destinatario = ['gabrielcicero45@gmail.com']
+            try:
+                send_mail(assunto, menssagem, remetente, destinatario, fail_silently=True)
+            except BadHeaderError:
+                return HttpResponse('Invalid header found')
+            return HttpResponse('Successo!')
+    return render(request,'index.html', {'form': form})
 
 def login_(request):
-
-    #data = {}
-    #form = LoginForm(request.POST or None)
-    
-   # email = LoginForm(request.POST['email'] or None)
-   # senha = LoginForm(request.POST['senha'] or None)
-   # user = authenticate(request, username=email, password=senha)
-    #if user is not None:
-    #    login(request, user)
-    #    return redirect('inicio')
-   # data['login'] = form
-    return render(request,'login.html')
-
-
+    if request.method == 'POST':
+        usuario = request.POST.get('usuario')
+        senha = request.POST.get('senha')
+        user = authenticate(request,username= usuario, password=senha)
+        if usuario is not None:
+            login(request, user)
+            return HttpResponse('Logou !')
+    contexto = {}
+    return render(request, 'login.html',contexto)
 
 def cadastro(request):
-    
-    data = {}
-    form = ClienteForm(request.POST or None)
-    if form.is_valid():
-        form.save()
-        return redirect('cadastro')
-
-    data['form'] = form
-    return render(request,'cadastro.html',data)
+    if request.method == 'POST':
+        form = ClienteForm(request.POST)
+        if form.is_valid():
+            novo_cliente = form.save()
+            novo_cliente = authenticate(
+                username=form.cleaned_data['username'],
+                password=form.cleaned_data['password1']
+            )
+            login(request, novo_cliente)
+            return HttpResponse('Cadastrado com successo!')
+    else:
+        form = ClienteForm()
+    return render(request, 'cadastro.html', {'form': form})
  
 
-def clientes_lista(request):
-    
-    clientes = Cliente.objects.all()
-    
-    return render(request,'clientes.html', {'cliente':clientes})
 
-def envia_email(request):
-    data = {}
-    email = ClienteForm(request.POST or None)
-    if email.is_valid():
-        email.send_mail('Teste','Funcionou','gabrielcicero45@gmail.com',[{email}],fail_silently=False,)
-    
-    data['newsletter'] = email
-    return render(request,'index.html',data)

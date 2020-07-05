@@ -58,9 +58,21 @@
                     <p>Consultoria financeira para desenvolvedores</p>
                     
 
-                    {% csrf_token %}
-                    {{newsletter.as_p}}
+                    
                     <form class="mt-4 mb-4" method="POST">
+                        {% csrf_token %}
+
+                        {% for hidden in form.hidden_fields %}
+                        {{ hidden }}
+                        {% endfor %}
+                
+                        {% for field in form.visible_fields %}
+                        <div class="form-group">
+                            {{ field.errors }}
+                            <label>{{ field.label_tag }}</label>
+                            <p>{{ field }}</p>
+                        </div>
+                        {% endfor %}
                         <div class="input-group input-group-lg">
                             <input type="text" placeholder="Digite seu e-mail" class="form-control">
                             <div class="input-group-append">
