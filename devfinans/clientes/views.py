@@ -1,26 +1,25 @@
 from django.shortcuts import render,redirect
 from .forms import Newsletter,ClienteForm
-''',LoginForm,'''
-from django.core.mail import send_mail
 from django.contrib.auth import authenticate, login
-from django.views import generic
-from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
+from django.core.mail import send_mail
+
+from django.core.mail import send_mail
+
 def inicio(request):
     form = Newsletter()
     if request.method == 'POST':
         form = Newsletter(request.POST)
         if form.is_valid():
-            assunto = 'Novo Lead !!'
-            menssagem = form.cleaned_data["email"]
-            remetente = form.cleaned_data["email"]
-            destinatario = ['gabrielcicero45@gmail.com']
-            try:
-                send_mail(assunto, menssagem, remetente, destinatario, fail_silently=True)
-            except BadHeaderError:
-                return HttpResponse('Invalid header found')
-            return HttpResponse('Successo!')
-    return render(request,'index.html', {'form': form})
+            email = form.cleaned_data['email']
+            send_mail('Seja Bem-vindo !!',
+            'Olá Bem-vindo ao devfinans, aqui começa sua jornada rumo à independência financeira',
+            'devfinanscontato@gmail.com',
+            [email],
+            fail_silently=True,)
+        else:
+             form = Newsletter()        
+    return render(request,'index.html',{'form': form})
 
 def login_(request):
     if request.method == 'POST':
@@ -43,7 +42,7 @@ def cadastro(request):
                 password=form.cleaned_data['password1']
             )
             login(request, novo_cliente)
-            return HttpResponse('Cadastrado com successo!')
+            return redirect('login')
     else:
         form = ClienteForm()
     return render(request, 'cadastro.html', {'form': form})

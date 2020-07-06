@@ -21,15 +21,6 @@ class ClienteForm(UserCreationForm):
         if User.objects.filter(email=self.cleaned_data['email']).exists():
             raise forms.ValidationError(self.fields['email'].error_messages['exists'])
         return self.cleaned_data['email']
-'''class LoginForm(ModelForm):
-    class Meta:
-        model = User
-        widgets ={
-            'password1':forms.PasswordInput(),
-        }
-        fields = ['email','senha']'''
 
 class Newsletter(forms.Form):
-    email = forms.EmailField(required=True, label='Seu Email', error_messages={'exists': 'Este e-mail já existe!'})
-    #forcefield = forms.CharField(
-        #required=False, widget=forms.HiddenInput, label="Leave empty")'
+    email = forms.EmailField()
