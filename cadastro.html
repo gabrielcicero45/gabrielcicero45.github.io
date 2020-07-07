@@ -1,4 +1,4 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,15 +16,15 @@
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="{% static 'estilo.css' %}">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 
 <body>
     <header id="header1">
         <nav>
             <div class="container ">
-                <a href="{% url 'inicio' %}" class="navbar-brand">
-                    <img src="{% static 'imagens/logo_preto.png' %}" class="align-self-center">
+                <a href="inicio" class="navbar-brand">
+                    <img src="imagens/logo_preto.png" class="align-self-center">
                 </a>
                 </div>
             </div>
@@ -40,43 +40,16 @@
             margin-bottom: 70px;
             ">
                 <h2> Cadastre-se</h2>
-                <form method="POST" action="">
-                    {% csrf_token %}
-                <div class="input-group mb-3">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="fas fa-user"></i></span>
-                    </div>
-                    {{form.username}}
-                </div>
-                <div class="input-group mb-2">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="fas fa-envelope-square"></i></span>
-                    </div>
-                    {{form.email}}
-                </div>
-                <div class="input-group mb-2">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="fas fa-key"></i></span>
-                    </div>
-                    {{form.password1}}
-                </div>
-                <div class="input-group mb-2">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="fas fa-key"></i></span>
-                    </div>
-                    {{form.password2}}
-                </div>
+                   <form method="POST">
+                    <div class="form-group">
 
-
-
-                   <div class="d-flex justify-content-center mt-3 login_container">
-                     <input class="btn login_btn" type="submit" value="Cadastre-se">
-                   </div>
-
-            </form>
+                       
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                  </form>
                 </div>
                 <div class="col-md-4">
-                    <img src="{% static 'imagens/note.jpg' %}" class="img-fluid">
+                    <img src="imagens/note.jpg" class="img-fluid">
                 </div>
 
         </div>
