@@ -24,10 +24,15 @@ nav:hover{
 	padding:60px 0px;
 	border-bottom: 1px solid rgba(170, 155, 170, 0.333);
 }
-.footer{
+footer{
 	background: #3f1b87;
 	align-self: center;
 	color:white;
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 .footer p a{
 	margin:5px 15px;
