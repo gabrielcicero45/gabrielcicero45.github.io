@@ -3,6 +3,9 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import './Contact.scss'
 
+import contato1 from '../../assets/img/contato1.png'
+import contato2 from '../../assets/img/contato2.png'
+
 export class Contact extends Component {
     render() {
         return (
@@ -14,7 +17,7 @@ export class Contact extends Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-3">img</div>
+                        <div className="col-3"><img className="img-fluid my-auto" src={contato1} alt="" /></div>
                         <div className="col-6">
                             <Form>
                                 <Form.Group controlId="exampleForm.ControlInput1">
@@ -35,7 +38,7 @@ export class Contact extends Component {
                                 </Button>
                             </Form>
                         </div>
-                        <div className="col-3">img</div>
+                        <div className="col-3"><img className="img-fluid mt-3" src={contato2} alt="" /></div>
                     </div>
                 </div>
             </section>

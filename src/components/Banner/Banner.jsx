@@ -4,6 +4,7 @@ import TypeWriter from '../Typewriter/TypeWriter'
 import './Banner.scss'
 import slide1 from '../../assets/img/slide1.png'
 import slide2 from '../../assets/img/slide2.png'
+import curriculo from '../../assets/Curriculum_vitae-Cicero_gabriel.pdf'
 
 
 export class Banner extends Component {
@@ -19,7 +20,7 @@ export class Banner extends Component {
                                 <p className="banner-title">Full-Stack Developer</p>
                                 <p className="banner-name"><TypeWriter time={200} text="Cicero Gabriel" /></p>
                                 <p className="banner-text"><TypeWriter time={1400} text="I'm searching for an opportunity to change the world through technology ..." /></p>
-                                <button className="banner-curriculum"><p className="curriculum-text"> Baixar Curriculo</p></button>
+                                <a href={curriculo} className="banner-curriculum btn" download><p className="curriculum-text"> Baixar Curriculo</p></a>
                             </div>
 
 
