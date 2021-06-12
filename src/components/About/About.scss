@@ -1,0 +1,67 @@
+.about-area{
+    height: 90vh;
+    margin-top: 285px;
+    color: #B5D7CD;
+    .about-profile{
+        
+        img{
+            padding: 8px;
+            border: 6px solid #5CC4C4;}
+        .about-name{
+            margin-top: 32px;
+            margin-left: 16px;
+            font-family: Antonio;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.05em;
+           
+        }
+        .about-icon{
+            font-size: 48px;
+            line-height: 15px;
+            margin: 40px 16px;
+            letter-spacing: 0.05em;
+        }     
+    }
+    .about-description{
+        font-family: Antonio;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 72px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        letter-spacing: 0.04em;
+        margin-bottom: 48px;
+
+
+
+    }
+    p{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: justify;
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.15em; 
+    }
+}
+.about-area::before{
+    content: "";
+    position: absolute;
+    top: 872px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(24, 83, 85, 0.77);
+}

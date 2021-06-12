@@ -1,0 +1,63 @@
+.banner-area {
+    height: 90vh;
+    padding-top: 64px;
+    .banner-text-area{
+        color: #B5D7CD;
+        margin-left: 48px;
+        .banner-title {
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 24px;
+            letter-spacing: 0.01em;
+        }
+        .banner-name{
+            font-family: Antonio;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            letter-spacing: 0.05em;
+        }
+        .banner-text{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.05em;
+
+        }
+        .banner-curriculum{
+            border: 2px solid #B5D7CD;
+            box-sizing: border-box;
+            border-radius: 8px;
+            width: 300px;
+            height: 50px;
+            margin-top: 24px;
+            background: transparent;
+            z-index: 2;
+            .curriculum-text{
+                font-family: Montserrat;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 16px;
+                margin-bottom: 0;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: #B5D7CD;
+            }
+          &:hover{
+              background: rgba(255,255, 255, 0.35);
+          }
+        }
+
+    }
+}
+.banner-area::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 755px;
+    opacity: .7;
+}
