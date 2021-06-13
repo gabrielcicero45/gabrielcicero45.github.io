@@ -17,8 +17,8 @@ export class Contact extends Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-3"><img className="img-fluid my-auto" src={contato1} alt="" /></div>
-                        <div className="col-6">
+                        <div className="col-3 d-md-block d-none"><img className="img-fluid my-auto" src={contato1} alt="" /></div>
+                        <div className="col-md-6 col-12">
                             <Form>
                                 <Form.Group controlId="exampleForm.ControlInput1">
                                     <Form.Label>Nome : </Form.Label>
@@ -38,7 +38,7 @@ export class Contact extends Component {
                                 </Button>
                             </Form>
                         </div>
-                        <div className="col-3"><img className="img-fluid mt-3" src={contato2} alt="" /></div>
+                        <div className="col-3 d-md-block d-none"><img className="img-fluid mt-3" src={contato2} alt="" /></div>
                     </div>
                 </div>
             </section>

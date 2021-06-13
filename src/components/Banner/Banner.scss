@@ -67,19 +67,26 @@
     .banner-text-area{
         .banner-title{
             font-size: 14px;
+            width: 120px;
         }
         .banner-name{
             font-size: 18px;
+            width: 120px;
         }
         .banner-text{
             font-size: 12px;
             line-height: 16px;
-            max-width: 60vh;
+            width: 124px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
         }
         .banner-curriculum{
             width: 120px;
             height: 32px;
-            margin-top: 0;
+            margin-top: 8px;
             .curriculum-text{
                 line-height: 18px;
                 font-size: 12px;

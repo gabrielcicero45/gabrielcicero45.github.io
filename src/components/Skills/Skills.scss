@@ -192,6 +192,7 @@
 @media screen and (max-width: 426px) {
 
   .skills-area{
+    margin-top: 64px;
     .skills-title{
       margin-bottom: 32px;
     }
@@ -203,8 +204,8 @@
     }
   }
   .skills-area::before{
-    height: 100vh;
-    top: 1232px;
+    height: 130vh;
+    top: 1000px;
    
   }
 

@@ -15,17 +15,17 @@ export class Banner extends Component {
             <section className="banner-area">
                 <div className="container p-4">
                     <div className="row">
-                        <div className="col-6 ">
+                        <div className="col-md-6 col-4 ">
                             <div className="banner-text-area">
                                 <p className="banner-title">Full-Stack Developer</p>
                                 <p className="banner-name"><TypeWriter time={200} text="Cicero Gabriel" /></p>
-                                <p className="banner-text"><TypeWriter time={1400} text="I'm searching for an opportunity to change the world through technology ..." /></p>
+                                <p className="banner-text "><TypeWriter time={1400} text="I'm searching for an opportunity to change the world through technology ..." /></p>
                                 <a href={curriculo} className="banner-curriculum btn" download><p className="curriculum-text"> Baixar Curriculo</p></a>
                             </div>
 
 
                         </div>
-                        <div className="col-6  pt-4 mt-4 ">
+                        <div className="col-md-6 col-8  pt-4 mt-md-4 mt-0 ">
                             <Carousel controls={controls} indicators={indicators} >
                                 <Carousel.Item interval={3500}>
                                     <img src={slide2} className="d-block w-100 img-fluid" alt="..." />
