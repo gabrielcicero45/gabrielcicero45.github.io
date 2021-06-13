@@ -60,3 +60,43 @@
     height: 755px;
     opacity: .7;
 }
+
+@media screen and (max-width: 426px){
+.banner-area{
+    height: 40vh;
+    .banner-text-area{
+        .banner-title{
+            font-size: 14px;
+        }
+        .banner-name{
+            font-size: 18px;
+        }
+        .banner-text{
+            font-size: 12px;
+            line-height: 16px;
+            max-width: 60vh;
+        }
+        .banner-curriculum{
+            width: 120px;
+            height: 32px;
+            margin-top: 0;
+            .curriculum-text{
+                line-height: 18px;
+                font-size: 12px;
+            }
+        }
+    } 
+}
+.banner-area::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    opacity: .7;
+}
+
+    
+    
+}

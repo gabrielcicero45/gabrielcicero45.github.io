@@ -34,3 +34,8 @@
     background: rgba(24, 83, 85, 0.8) url('../../assets/img/binarios.png');
 }
 
+@media screen and (max-width: 426px) {
+    .portfolio-area{
+        display: none;
+    }
+}

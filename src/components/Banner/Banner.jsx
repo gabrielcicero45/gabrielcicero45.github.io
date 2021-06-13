@@ -15,7 +15,7 @@ export class Banner extends Component {
             <section className="banner-area">
                 <div className="container p-4">
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-6 ">
                             <div className="banner-text-area">
                                 <p className="banner-title">Full-Stack Developer</p>
                                 <p className="banner-name"><TypeWriter time={200} text="Cicero Gabriel" /></p>
@@ -25,13 +25,13 @@ export class Banner extends Component {
 
 
                         </div>
-                        <div className="col-6 pt-4 mt-4 ">
+                        <div className="col-6  pt-4 mt-4 ">
                             <Carousel controls={controls} indicators={indicators} >
                                 <Carousel.Item interval={3500}>
-                                    <img src={slide2} className="d-block w-100" alt="..." />
+                                    <img src={slide2} className="d-block w-100 img-fluid" alt="..." />
                                 </Carousel.Item>
                                 <Carousel.Item interval={3500}>
-                                    <img src={slide1} className="d-block w-100" alt="..." />
+                                    <img src={slide1} className="d-block w-100 img-fluid" alt="..." />
                                 </Carousel.Item>
                             </Carousel>
                         </div>
