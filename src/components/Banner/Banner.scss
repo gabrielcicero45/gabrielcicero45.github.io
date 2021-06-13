@@ -2,7 +2,7 @@
     height: 90vh;
     padding-top: 64px;
     .banner-text-area{
-        color: #B5D7CD;
+        
         margin-left: 48px;
         .banner-title {
             font-family: Montserrat;
@@ -27,7 +27,7 @@
 
         }
         .banner-curriculum{
-            border: 2px solid #B5D7CD;
+            border: 2px solid var(--color-text);
             box-sizing: border-box;
             border-radius: 8px;
             width: 300px;
@@ -40,9 +40,10 @@
                 font-weight: normal;
                 font-size: 24px;
                 margin-bottom: 0;
+                color: var(--color-text);
                 text-align: center;
                 letter-spacing: 0.05em;
-                color: #B5D7CD;
+               
             }
           &:hover{
               background: rgba(255,255, 255, 0.35);

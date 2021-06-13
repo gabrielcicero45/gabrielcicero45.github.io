@@ -1,12 +1,12 @@
 
 html[data-theme='dark']{
   --bg:#06080D;
-  
+  --color-text:#B5D7CD;
   }
   
 html[data-theme='light']{
-  --bg:#FFF;
-  $color-text:#06080D;
+  --bg:rgba(88, 93, 98, 0.25);;
+  --color-text:#06080D;
   
 
   }
@@ -20,6 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg);
+  color: var(--color-text);
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repear;
