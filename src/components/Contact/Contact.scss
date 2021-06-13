@@ -1,5 +1,5 @@
 .contact-area{
-    color: #B5D7CD;
+    
     margin-bottom: 100px;
     .contact-title{
         font-family: Antonio;
@@ -25,6 +25,7 @@
        margin-bottom: 8px;
     }
     .btn-success{
+        color: var(--color-text);
         height: 72px;
         border-radius: 8px;
         margin-top: 16px;

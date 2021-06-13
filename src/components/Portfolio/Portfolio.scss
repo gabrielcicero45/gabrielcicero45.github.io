@@ -1,5 +1,5 @@
 .portfolio-area{
-    color: #B5D7CD;
+  
     margin-top: 172px;
     margin-bottom: 500px;
     .portfolio-title{
@@ -31,7 +31,8 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(24, 83, 85, 0.8) url('../../assets/img/binarios.png');
+    background:  var(--inner-bg-img);
+    
 }
 @media screen and (max-width: 769px) {
     .portfolio-area::before{

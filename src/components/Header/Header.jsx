@@ -1,9 +1,22 @@
 import React, { Component } from 'react'
 import './Header.scss'
 import Logo from '../../assets/img/Logo.png'
+import { BsBrightnessHigh } from 'react-icons/bs'
+import { MdBrightness2 } from 'react-icons/md'
 
 export class Header extends Component {
 	render() {
+		function ChangeLight() {
+			document.getElementById('tema').setAttribute('data-theme', 'light')
+			document.getElementById('themeToggle').className = "d-none"
+			document.getElementById('themeToggle2').className = "d-block"
+		}
+		function ChangeDark() {
+			document.getElementById('tema').setAttribute('data-theme', 'dark')
+			document.getElementById('themeToggle').className = "d-block"
+			document.getElementById('themeToggle2').className = "d-none"
+		}
+
 
 		return (
 
@@ -27,7 +40,8 @@ export class Header extends Component {
 								</li>
 
 								<li><a href="#" class="nav-item nav-link">Contato</a></li>
-								<li></li>
+								<li> <button id="themeToggle" onClick={ChangeLight} className="btn  mt-5  light"  ><BsBrightnessHigh /></button></li>
+								<li> <button id="themeToggle2" onClick={ChangeDark} className="btn mt-5  dark d-none"  ><MdBrightness2 /></button></li>
 							</ul>
 
 						</div>

@@ -2,13 +2,13 @@
 html[data-theme='dark']{
   --bg:#06080D;
   --color-text:#B5D7CD;
+  --inner-bg-img:url('../src/assets/img/binarios.png');
   }
   
 html[data-theme='light']{
   --bg:rgba(88, 93, 98, 0.25);;
   --color-text:#06080D;
-  
-
+  --inner-bg-img:url('../src/assets/img/binarios2.png');
   }
 
 
