@@ -3,12 +3,16 @@ html[data-theme='dark']{
   --bg:#06080D;
   --color-text:#B5D7CD;
   --inner-bg-img:url('../src/assets/img/binarios.png');
+  --banner-grad: radial-gradient(56.35% 87.01% at 50% 50%, rgba(24, 83, 85, 0.392) 13.02%, rgba(55, 58, 59, 0.08) 80.73%);
+  --nav-link-border:#B5D7CD;
   }
   
 html[data-theme='light']{
-  --bg:rgba(88, 93, 98, 0.25);;
+  --bg:rgba(88, 93, 98, 0.20);
   --color-text:#06080D;
   --inner-bg-img:url('../src/assets/img/binarios2.png');
+  --banner-grad: radial-gradient(77.18% 92.72% at 50% 50%, #5CC4C4 0%, rgba(255, 255, 255, 0.1) 100%);
+  --nav-link-border:#C36655;
   }
 
 

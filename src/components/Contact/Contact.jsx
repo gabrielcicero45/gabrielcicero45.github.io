@@ -9,7 +9,7 @@ import contato2 from '../../assets/img/contato2.png'
 export class Contact extends Component {
     render() {
         return (
-            <section className="contact-area">
+            <section className="contact-area" id="contato">
                 <div className="container ">
                     <div className="row">
                         <div className="col">

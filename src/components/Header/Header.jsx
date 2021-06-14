@@ -23,7 +23,7 @@ export class Header extends Component {
 			<header class="header-area overlay">
 				<nav class="navbar navbar-expand-md navbar-dark">
 					<div class="container">
-						<a href="home" class="navbar-brand mt-2"><img src={Logo} alt="" /> </a>
+						<a href="/" class="navbar-brand mt-2"><img src={Logo} alt="" /> </a>
 
 						<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
 							<span class="menu-icon-bar"></span>
@@ -35,13 +35,13 @@ export class Header extends Component {
 							<ul class="navbar-nav ml-auto">
 								<li><a href="#sobre" class="nav-item nav-link">Sobre</a></li>
 								<li><a href="#skills" class="nav-item nav-link">Skills</a></li>
-								<li class="dropdown">
-									<a href="#" class="nav-item nav-link" data-toggle="dropdown">Projetos</a>
+								<li>
+									<a href="#portfolio" class="nav-item nav-link">Projetos</a>
 								</li>
 
-								<li><a href="#" class="nav-item nav-link">Contato</a></li>
-								<li> <button id="themeToggle" onClick={ChangeLight} className="btn  mt-5  light"  ><BsBrightnessHigh /></button></li>
-								<li> <button id="themeToggle2" onClick={ChangeDark} className="btn mt-5  dark d-none"  ><MdBrightness2 /></button></li>
+								<li><a href="#contato" class="nav-item nav-link">Contato</a></li>
+								<li> <button id="themeToggle" onClick={ChangeLight} className=""  ><BsBrightnessHigh /></button></li>
+								<li> <button id="themeToggle2" onClick={ChangeDark} className=" d-none"  ><MdBrightness2 /></button></li>
 							</ul>
 
 						</div>
