@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.1ca29e4e.chunk.css",
-    "main.js": "/static/js/main.55cf71e9.chunk.js",
-    "main.js.map": "/static/js/main.55cf71e9.chunk.js.map",
+    "main.css": "/static/css/main.473c8b32.chunk.css",
+    "main.js": "/static/js/main.8136e5ef.chunk.js",
+    "main.js.map": "/static/js/main.8136e5ef.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6fb58a7e.js",
     "runtime-main.js.map": "/static/js/runtime-main.6fb58a7e.js.map",
     "static/js/2.7271a969.chunk.js": "/static/js/2.7271a969.chunk.js",
     "static/js/2.7271a969.chunk.js.map": "/static/js/2.7271a969.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.1ca29e4e.chunk.css.map": "/static/css/main.1ca29e4e.chunk.css.map",
+    "static/css/main.473c8b32.chunk.css.map": "/static/css/main.473c8b32.chunk.css.map",
     "static/js/2.7271a969.chunk.js.LICENSE.txt": "/static/js/2.7271a969.chunk.js.LICENSE.txt",
     "static/media/Curriculum_vitae-Cicero_gabriel.dc56c31a.pdf": "/static/media/Curriculum_vitae-Cicero_gabriel.dc56c31a.pdf",
     "static/media/index.scss": "/static/media/binarios2.a9a539cd.png",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.6fb58a7e.js",
     "static/js/2.7271a969.chunk.js",
-    "static/css/main.1ca29e4e.chunk.css",
-    "static/js/main.55cf71e9.chunk.js"
+    "static/css/main.473c8b32.chunk.css",
+    "static/js/main.8136e5ef.chunk.js"
   ]
 }
