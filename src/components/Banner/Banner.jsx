@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import TypeWriter from '../Typewriter/TypeWriter'
+import TypeWriter from '../Functions/Typewriter/TypeWriter'
 import './Banner.scss'
 import slide1 from '../../assets/img/slide1.png'
 import slide2 from '../../assets/img/slide2.png'
@@ -25,6 +25,7 @@ export class Banner extends Component {
 
 
                         </div>
+
                         <div className="col-md-6 col-8  pt-4 mt-md-4 mt-0 ">
                             <Carousel controls={controls} indicators={indicators} >
                                 <Carousel.Item interval={3500}>
