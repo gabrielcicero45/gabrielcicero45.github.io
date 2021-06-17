@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.473c8b32.chunk.css",
-    "main.js": "/static/js/main.8136e5ef.chunk.js",
-    "main.js.map": "/static/js/main.8136e5ef.chunk.js.map",
+    "main.css": "/static/css/main.9db6ab4a.chunk.css",
+    "main.js": "/static/js/main.f1c7973e.chunk.js",
+    "main.js.map": "/static/js/main.f1c7973e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6fb58a7e.js",
     "runtime-main.js.map": "/static/js/runtime-main.6fb58a7e.js.map",
-    "static/js/2.7271a969.chunk.js": "/static/js/2.7271a969.chunk.js",
-    "static/js/2.7271a969.chunk.js.map": "/static/js/2.7271a969.chunk.js.map",
+    "static/js/2.617c0a91.chunk.js": "/static/js/2.617c0a91.chunk.js",
+    "static/js/2.617c0a91.chunk.js.map": "/static/js/2.617c0a91.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.473c8b32.chunk.css.map": "/static/css/main.473c8b32.chunk.css.map",
-    "static/js/2.7271a969.chunk.js.LICENSE.txt": "/static/js/2.7271a969.chunk.js.LICENSE.txt",
+    "static/css/main.9db6ab4a.chunk.css.map": "/static/css/main.9db6ab4a.chunk.css.map",
+    "static/js/2.617c0a91.chunk.js.LICENSE.txt": "/static/js/2.617c0a91.chunk.js.LICENSE.txt",
     "static/media/Curriculum_vitae-Cicero_gabriel.dc56c31a.pdf": "/static/media/Curriculum_vitae-Cicero_gabriel.dc56c31a.pdf",
     "static/media/index.scss": "/static/media/binarios2.a9a539cd.png",
     "static/media/contato1.1d6741db.png": "/static/media/contato1.1d6741db.png",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6fb58a7e.js",
-    "static/js/2.7271a969.chunk.js",
-    "static/css/main.473c8b32.chunk.css",
-    "static/js/main.8136e5ef.chunk.js"
+    "static/js/2.617c0a91.chunk.js",
+    "static/css/main.9db6ab4a.chunk.css",
+    "static/js/main.f1c7973e.chunk.js"
   ]
 }
