@@ -9,7 +9,7 @@ export class About extends Component {
     render() {
 
         return (
-            <section id="sobre" className="about-area">
+            <section id="sobre" className="about-area bg-binary">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-4 col-12 mx-auto mt-5">

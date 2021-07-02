@@ -8,7 +8,7 @@ export class Portfolio extends Component {
     render() {
 
         return (
-            <section id="portfolio" className="portfolio-area">
+            <section id="portfolio" className="portfolio-area bg-binary">
                 <div className="container ">
                     <div className="row">
                         <div className="col">

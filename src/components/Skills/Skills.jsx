@@ -20,7 +20,7 @@ export class Skills extends Component {
         }
 
         return (
-            <section id="skills" className="skills-area">
+            <section id="skills" className="skills-area bg-binary">
                 <div className="container ">
                     <div className="row">
                         <div className="col">

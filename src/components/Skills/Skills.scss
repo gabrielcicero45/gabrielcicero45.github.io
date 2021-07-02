@@ -1,6 +1,8 @@
 .skills-area{
-    margin-top: 132px;
-    margin-bottom: 200px;
+    margin-top: 164px;
+    margin-bottom: 164px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     .skills-title{
         font-family: Antonio;
         font-style: normal;
@@ -160,16 +162,6 @@
 
 }
 
-
-.skills-area::before{
-    content: "";
-    position: absolute;
-    top: 1556px;
-    left: 0;
-    width: 100%;
-    height: 80vh;
-    background: var(--inner-bg-img);
-}
 @media screen and (max-width: 768px) {
  .skills-area{
   margin-top: 0;
@@ -181,11 +173,6 @@
   }
 
  }
- .skills-area::before{
-  height: 60vh;
-  top: 1600px;
- 
-}
   
 }
 @media screen and (max-width: 426px) {
@@ -202,15 +189,8 @@
       display: block;
     }
   }
-  .skills-area::before{
-    height: 90vh;
-    top: 1321px;
-   
-  }
-
+  
 }
-
-
 
 .wrapper {
   display: none;
