@@ -39,7 +39,7 @@ export default function SendEmail() {
 
                             <Form.Group controlId="exampleForm.ControlInput1">
                                 <Form.Label>Assunto : </Form.Label>
-                                <Form.Control size="lg" type="text" placeholder="Seu nome" name="subject" />
+                                <Form.Control size="lg" type="text" placeholder="Assunto" name="subject" />
                             </Form.Group>
                             <Form.Group controlId="exampleForm.ControlInput1">
                                 <Form.Label>Email : </Form.Label>
