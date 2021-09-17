@@ -17,6 +17,7 @@ export default function SendEmail() {
             }, (error) => {
                 console.log(error.text);
             });
+        e.target.reset()
     }
 
     return (
