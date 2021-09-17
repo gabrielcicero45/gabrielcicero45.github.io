@@ -25,20 +25,6 @@ export class Skills extends Component {
                     <div className="row">
                         <div className="col">
                             <h2 className="skills-title">Skills</h2>
-                            <Flickity
-                                className={'carousel'}
-                                elementType={'div'}
-                                options={flickityOptions}
-                                disableImagesLoaded={false}
-                                reloadOnUpdate
-
-                            >
-                                <img src={html5} alt="..." />
-                                <img src={css3} alt="..." />
-                                <img src={js} alt="..." />
-                                <img src={django} alt="..." />
-                                <img src={boot} alt="..." />
-                            </Flickity>
                             <main class="wrapper">
                                 <article class="badge orange">
                                     <div class="rounded"><FaHtml5></FaHtml5></div>
