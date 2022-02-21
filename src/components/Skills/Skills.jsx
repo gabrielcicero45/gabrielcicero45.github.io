@@ -1,24 +1,12 @@
 import React, { Component } from 'react'
 
-import Flickity from 'react-flickity-component'
 import { FaHtml5, FaCss3Alt, FaJs, FaPhp, FaNode, FaPython, FaSass, FaBootstrap, FaJava, FaReact, FaWordpress, FaAngular } from "react-icons/fa";
 
 import './Skills.scss'
-import html5 from '../../assets/img/html5.png'
-import css3 from '../../assets/img/css3.png'
-import js from '../../assets/img/js.png'
-import boot from '../../assets/img/boot.png'
-import django from '../../assets/img/django.png'
-
-
-
 
 export class Skills extends Component {
     render() {
-        const flickityOptions = {
-            initialIndex: 2
-        }
-
+    
         return (
             <section id="skills" className="skills-area bg-binary">
                 <div className="container ">

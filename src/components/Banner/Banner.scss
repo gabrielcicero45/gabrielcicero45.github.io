@@ -34,6 +34,8 @@
             height: 50px;
             margin-top: 24px;
             background: transparent;
+            transition: .4s ease-in;
+            position: relative;
             z-index: 2;
             .curriculum-text{
                 font-family: Montserrat;
@@ -45,9 +47,17 @@
                 letter-spacing: 0.05em;
                
             }
-          &:hover{
-              background: rgba(255,255, 255, 0.35);
-          }
+            &:hover{
+                box-shadow: 10px 10px 0px var(--color-text);
+                top: -5px;
+                left: -5px;
+            }
+        }
+
+        a::before,a::after{
+            position: absolute;
+            content: "";
+            z-index: -1;
         }
 
     }

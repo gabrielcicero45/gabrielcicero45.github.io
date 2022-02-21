@@ -28,8 +28,8 @@ export class About extends Component {
                         <div className="col-md-7 col-12">
                             <h2 className="about-description">Sobre</h2>
                             <p>Sou graduando em Engenharia da computação pela UFRN, iniciei no desenvolvimento web no final de 2018 na empresa júnior do meu curso EJECT, dei meus primeiros passos com Python e Django. Em 2020 fiz estágio na empresa Interativa Digital onde desenvolvi alguns projetos em PHP com Wordpress.</p>
-                            <p>Atualmente estou estagiando na Quark tecnologia.
-                                Estou sempre em busca de novos conhecimentos e estudo as melhores ferramentas que estão em uso no mercado.</p>
+                            <p>Atualmente estou estagiando na Quark tecnologia, onde participo da manutenção do sistema QuarkEdu.
+                                Tenho o foco em desenvolvimento Front-end, estou sempre me especializando e estudando as melhores ferramentas em uso no mercado.</p>
                         </div>
                     </div>
 

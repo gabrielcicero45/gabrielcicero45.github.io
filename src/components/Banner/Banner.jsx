@@ -28,10 +28,10 @@ export class Banner extends Component {
 
                         <div className="col-md-6 col-8  pt-4 mt-md-4 mt-0 ">
                             <Carousel controls={controls} indicators={indicators} >
-                                <Carousel.Item interval={3500}>
+                                <Carousel.Item interval={3000}>
                                     <img src={slide2} className="d-block w-100 img-fluid" alt="..." />
                                 </Carousel.Item>
-                                <Carousel.Item interval={3500}>
+                                <Carousel.Item interval={2000}>
                                     <img src={slide1} className="d-block w-100 img-fluid" alt="..." />
                                 </Carousel.Item>
                             </Carousel>
