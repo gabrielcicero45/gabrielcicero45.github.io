@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.c91a6606.chunk.css",
-    "main.js": "/static/js/main.e56eda23.chunk.js",
-    "main.js.map": "/static/js/main.e56eda23.chunk.js.map",
+    "main.css": "/static/css/main.e7d9083d.chunk.css",
+    "main.js": "/static/js/main.dc848aa4.chunk.js",
+    "main.js.map": "/static/js/main.dc848aa4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6fb58a7e.js",
     "runtime-main.js.map": "/static/js/runtime-main.6fb58a7e.js.map",
     "static/js/2.3ad2b4b9.chunk.js": "/static/js/2.3ad2b4b9.chunk.js",
     "static/js/2.3ad2b4b9.chunk.js.map": "/static/js/2.3ad2b4b9.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.c91a6606.chunk.css.map": "/static/css/main.c91a6606.chunk.css.map",
+    "static/css/main.e7d9083d.chunk.css.map": "/static/css/main.e7d9083d.chunk.css.map",
     "static/js/2.3ad2b4b9.chunk.js.LICENSE.txt": "/static/js/2.3ad2b4b9.chunk.js.LICENSE.txt",
     "static/media/Curriculum_vitae-Cicero_gabriel.0cc6d404.pdf": "/static/media/Curriculum_vitae-Cicero_gabriel.0cc6d404.pdf",
     "static/media/index.scss": "/static/media/binarios2.a9a539cd.png",
-    "static/media/Portfolio.scss": "/static/media/encurta-ai.4d2d358a.png",
+    "static/media/Portfolio.scss": "/static/media/netflix.a46ba098.png",
     "static/media/contato1.1d6741db.png": "/static/media/contato1.1d6741db.png",
     "static/media/contato2.ad7996fd.png": "/static/media/contato2.ad7996fd.png",
     "static/media/profile.fff85578.png": "/static/media/profile.fff85578.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.6fb58a7e.js",
     "static/js/2.3ad2b4b9.chunk.js",
-    "static/css/main.c91a6606.chunk.css",
-    "static/js/main.e56eda23.chunk.js"
+    "static/css/main.e7d9083d.chunk.css",
+    "static/js/main.dc848aa4.chunk.js"
   ]
 }
