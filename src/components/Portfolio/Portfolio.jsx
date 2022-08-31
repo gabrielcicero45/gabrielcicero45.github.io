@@ -51,6 +51,19 @@ export class Portfolio extends Component {
                         </div>
                         </a>
                         </div>
+                        <div className="col-md-4 mt-5">
+                        <a href="https://netflix-clone-ad5fd.web.app" target="blank">
+                        <div className="card text-white card-has-bg click-col netflix" >
+                                <div className="card-img-overlay d-flex flex-column">
+                                    <div className="card-body">
+                                    <small className="card-meta mb-2">Clone de UI</small>
+                                    <h3 className="card-title mt-0 "><a className="text-white" herf="#">Netflix Clone</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                      
+                        </div>
                     </div>
                 </div>
             </section >
